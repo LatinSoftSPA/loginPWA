@@ -57,7 +57,7 @@ main {
   height: 100%;
   width: 45%;
   top: 0;
-  left: 0;
+  left: 55%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -74,7 +74,11 @@ form {
   justify-content: space-evenly;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  transition: opacity 0.02s 0.4s;
+  transition: opacity 0.3s 0.4s;
+  -webkit-transition: opacity 0.3s 0.4s;
+  -moz-transition: opacity 0.3s 0.4s;
+  -ms-transition: opacity 0.3s 0.4s;
+  -o-transition: opacity 0.3s 0.4s;
 }
 
 form.sign-up-form {
@@ -123,7 +127,7 @@ form.sign-up-form {
 }
 
 .toggle:hover {
-    color: #6c6c6c;
+  color: #6c6c6c;
 }
 
 .input-wrap {
@@ -173,7 +177,7 @@ label {
   border-bottom-color: #000000;
 }
 
-.input-field.active + label {
+.input-field.active+label {
   font-size: 0.7rem;
   top: 1px;
 }
@@ -184,10 +188,10 @@ label {
   height: 43px;
   background: rgb(46, 134, 193);
   background: radial-gradient(circle,
-    rgba(46, 134, 193, 1) 6%, 
-    rgba(89, 145, 189, 1) 40%,      
-    rgba(84, 142, 181, 1) 66%, 
-    rgba(46, 134, 193, 1) 88%);
+      rgba(46, 134, 193, 1) 6%,
+      rgba(89, 145, 189, 1) 40%,
+      rgba(84, 142, 181, 1) 66%,
+      rgba(46, 134, 193, 1) 88%);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -207,9 +211,9 @@ label {
 
 .sign-btn:hover {
   background: radial-gradient(circle,
-    rgb(42, 183, 249) 0%,
-    rgb(87, 192, 241) 50%,
-    rgb(23, 177, 243) 100%);
+      rgb(42, 183, 249) 0%,
+      rgb(87, 192, 241) 50%,
+      rgb(23, 177, 243) 100%);
   color: #fff;
   font-size: 0.9rem;
 }
@@ -239,31 +243,39 @@ main.sign-up-mode form.sign-up-form {
 }
 
 main.sign-up-mode .forms-wrap {
-  left: 55%;
+  left: 0%;
 }
 
 main.sign-up-mode .carousel {
-  left: 0%;
+  left: 45%;
 }
 
 .carousel {
   position: absolute;
   height: 100%;
   width: 55%;
-  left: 45%;
+  left: 0;
   top: 0;
   background: rgb(46, 134, 193);
-  background: radial-gradient(circle,         rgba(46, 134, 193, 1) 6%,          rgba(89, 145, 189, 1) 40%,          rgba(84, 142, 181, 1) 66%,          rgba(46, 134, 193, 1) 88%);
-  border-radius: 2.3rem;
+  background: radial-gradient(circle,
+      rgba(46, 134, 193, 1) 6%,
+      rgba(89, 145, 189, 1) 40%,
+      rgba(84, 142, 181, 1) 66%,
+      rgba(46, 134, 193, 1) 88%);
   display: grid;
   grid-template-rows: auto 1fr;
   padding-bottom: 2rem;
   overflow: hidden;
-  transition: 0.8s ease-in-out;
+  border-radius: 2.3rem;
   -webkit-border-radius: 2.3rem;
   -moz-border-radius: 2.3rem;
   -ms-border-radius: 2.3rem;
   -o-border-radius: 2.3rem;
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -ms-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
 }
 
 .images-wrapper {
@@ -472,7 +484,7 @@ main.sign-up-mode .carousel {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
-}
+  }
 
   .inner-box {
     padding: 1rem;
@@ -485,7 +497,7 @@ main.sign-up-mode .carousel {
     -moz-border-radius: 1.6rem;
     -ms-border-radius: 1.6rem;
     -o-border-radius: 1.6rem;
-}
+  }
 
   .text-wrap {
     margin-bottom: 1rem;

@@ -10,23 +10,17 @@ const Formularios = () => {
     const handleChangeForm = () => {
         const main = document.querySelector("main");
         const toggle_btn = document.querySelectorAll(".toggle");
-        toggle_btn.forEach((btn) => {
-            btn.addEventListener("mouseover", () => {
-                main.classList.toggle("sign-up-mode");
-            });
+        toggle_btn.forEach((obj) => {
+            obj.addEventListener("click", () => main.classList.toggle("sign-up-mode"));
         });
     }
 
     const handleCampos = (inputs) => {
-        inputs.forEach((inp) => {
-            inp.addEventListener("focus", () => {
-            inp.classList.add("active");
-            });
-            inp.addEventListener("blur", () => {
-            if (inp.value != "") return;
-            inp.classList.remove("active");
-            });
-        });
+        const focusBlur = (obj) => {
+            obj.addEventListener("focus", () => obj.classList.add("active"));
+            obj.addEventListener("blur", () => obj.value === "" ? obj.classList.remove("active") : null);
+        }
+        inputs.forEach((obj) => focusBlur(obj));
     }
   
     useEffect(() => {
