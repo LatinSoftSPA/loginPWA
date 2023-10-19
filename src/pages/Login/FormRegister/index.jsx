@@ -26,15 +26,13 @@ const Formulario = () => {
   return (  
     <div className="actual-form">
       <div className="input-wrap">
+        <input type="text" className="input-field" autoComplete="off" required />
+        <label className="label-form">Unidad</label>
+      </div>
+      <div className="input-wrap">
         <input type="text" min="4" className="input-field" autoComplete="off" required />
         <label className="label-form">Usuario</label>
       </div>
-
-      <div className="input-wrap">
-        <input type="email" className="input-field" autoComplete="off" required />
-        <label className="label-form">Email</label>
-      </div>
-
       <div className="input-wrap">
         <input type="password" min="4" className="input-field" autoComplete="off" required />
         <label className="label-form">Contraseña</label>
